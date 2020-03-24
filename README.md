@@ -14,7 +14,7 @@ The objective is to create a network that can take a low-resolution MRI scan and
 
 This repo aims at reproducing the results of the paper https://arxiv.org/abs/1803.01417. The network architecture is shown below:
 
-![Architecture](./model_architecture.jpeg)
+![Architecture](model_architecture.jpeg)
 
 mainly I tried 
 
