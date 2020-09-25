@@ -16,7 +16,7 @@ This repo aims at reproducing the results of the paper https://arxiv.org/abs/180
 
 ![Architecture](./model_architecture.jpg)
 
-mainly I tried 
+### mainly I tried 
 
 1. Data Augmentation method <br>
 I had to make Low Resolution image data for input data. I tried fftshift filter, Gausian filter and mixing some filters and so on. What I choose as the best method is taking fft and inverse fftshift with random coefficient and bigger zeroing size (i.e. in this model, 160)
