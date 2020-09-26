@@ -22,7 +22,7 @@ This repo aims at reproducing the results of the paper https://arxiv.org/abs/180
 I had to make Low Resolution image data for input data. I tried fftshift filter, Gausian filter and mixing some filters and so on. What I choose as the best method is taking fft and inverse fftshift with random coefficient and bigger zeroing size (i.e. in this model, 160)
 
 2. Decreasing number of paparameters <br>
-I tried to decrease number of parameters of discriminator. What I use method is replacing 3x3 CONV by 1x1 CONV and fully-connected layers by global average pooling. I decreased the number of paramrters from 31.156M to 17.629M. 
+I tried to decrease number of parameters of discriminator. The method which I used is replacing 3x3 CONV by 1x1 CONV and fully-connected layers by global average pooling. I decreased the number of paramrters from 31.156M to 17.629M. 
 
 3. Gradient Penalty <br>
 I used Gradient Penalty term to Wasserstein-GAN. Since It is replaced with weight clipping, I assumed this trem will help to get better performance.   
